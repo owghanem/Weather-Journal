@@ -5,33 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Weather Journal</title>
 </head>
 
 <body>
-    <header id="mainHeader">
-
-    </header>
-    <main id="mainContent">
-        <section class="inputSection">
-            <div class="content zip">
-                <label for="zip">Enter Zipcode here
-                    <input type="text" id="zip" placeholder="enter zip code here">
-                </label>
-
+    <div id="wrapper">
+        <header id="mainHeader">
+            <div id="headerLogo">
+                <h1>Weather Journal</h1>
             </div>
+        </header>
+        <main id="mainContent">
+            <section id="inputSection">
+                <div class="content zip">
+                    <label for="zipcode">What's you zipcode?</label>
+                    <input type="text" id="userZip" placeholder="Enter zip code here">
+                </div>
 
-            <div class="content feelings">
+                <div class="content feelings">
+                    <label for="Feelings">How are you feeling today?</label>
+                    <input type="text" id="userFeelings" placeholder="Tell me your feelings">
+                </div>
+            </section>
 
+            <section id="outputSection">
+                <h3 class="outputHeader">
+                    outputHeader
+                </h3>
+            </section>
+        </main>
+        <footer id="mainFooter">
+            <div class="footerText">
+                <p>Thank you for reading throw.</p>
+                <p>This Journal was made from sdcratch by Omar Ghanem.</p>
             </div>
-        </section>
-
-        <section id="outputSection"></section>
-    </main>
-    <footer id="mainFooter">
-
-    </footer>
-    <script src="app.js" type="text/javascript"></script>
+        </footer>
+        <script src="app.js" type="text/javascript"></script>
+    </div>
 </body>
 
 </html>
