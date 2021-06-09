@@ -5,41 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <title>Weather Journal</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div id="wrapper">
         <header id="mainHeader">
-            <div id="headerLogo">
-                <h1>Weather Journal</h1>
+            <div>
+                <h1 id="headerLogo">Weather Journal</h1>
             </div>
         </header>
         <main id="mainContent">
-            <section id="inputSection">
+            <section class="content" id="inputSection">
                 <div class="content zip">
-                    <label for="zipcode">What's you zipcode?</label>
-                    <input type="text" id="userZip" placeholder="Enter zip code here">
+                    <label for="userZip">What's you zipcode?</label>
+                    <input type="text" class="input" id="userZip" maxlength="5" placeholder="Enter zip code here">
                 </div>
 
                 <div class="content feelings">
-                    <label for="Feelings">How are you feeling today?</label>
-                    <input type="text" id="userFeelings" placeholder="Tell me your feelings">
+                    <label for="userFeelings">How are you feeling today?</label>
+                    <input type="text" class="input" id="userFeelings" placeholder="Tell me your feelings">
+                </div>
+                <div class="submit">
+                    <button id="mainBTN" type="submit"> Done! </button>
                 </div>
             </section>
 
-            <section id="outputSection">
-                <h3 class="outputHeader">
-                    outputHeader
-                </h3>
+            <section class="content" id="outputSection">
+                <h3 class="outputHeader"></h3>
+                <div class="content output"></div>
             </section>
         </main>
         <footer id="mainFooter">
             <div class="footerText">
                 <p>Thank you for reading throw.</p>
-                <p>This Journal was made from sdcratch by Omar Ghanem.</p>
+                <p>This Journal was made from scratch with Open Weather API by Omar Ghanem.</p>
             </div>
         </footer>
         <script src="app.js" type="text/javascript"></script>
